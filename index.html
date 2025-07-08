@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Carro Novinho</title>
+    <link rel="shortcut icon" href="imagens/icone.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+</head>
+<body>
+    <header>
+            <a href="index.html" title="Home">
+                <img src="logo.png" alt="Logo" class="logo">
+            </a>
+
+            <a href="javascript:mostrarmenu()" class="menu">
+                <i class="fas fa-bars"></i>
+            </a>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html" title="Home">
+                            <i class="fas fa-home"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="estoque.html" title="Estoque">
+                            <i class="fas fa-car"></i>
+                            Estoque
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Contato.html" title="Contato">
+                             <i class="fas fa-envelope"></i>
+                             Contato
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+    </header>
+
+    <main>
+       <h1>Link para o jogo</h1>
+    </main>
+
+    <footer>
+        <p>Todos os direitos reservados</p>
+        <p>
+            <a href="http://facebook.com" title="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://instagram.com" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com" title="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </p>
+    </footer>
+
+    <script>
+        function mostrarmenu(){
+            document.querySelector("header nav").classList.toggle("mostrar");
+        }
+    </script>
+</body>
+</html>
