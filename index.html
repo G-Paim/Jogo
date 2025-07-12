@@ -1,75 +1,122 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Carro Novinho</title>
-    <link rel="shortcut icon" href="imagens/icone.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Carro Novinho</title>
+  <link rel="shortcut icon" href="imagens/icone.png">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/all.min.css">
 </head>
+
 <body>
-    <header>
-            <a href="index.html" title="Home">
-                <img src="logo.png" alt="Logo" class="logo">
-            </a>
+  <!-- Cabeçalho -->
+  <header>
+    <a href="index.html" title="Home">
+      <img src="logo.png" alt="Logo" class="logo">
+    </a>
 
-            <a href="javascript:mostrarmenu()" class="menu">
-                <i class="fas fa-bars"></i>
-            </a>
 
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html" title="Home">
-                            <i class="fas fa-home"></i>
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="estoque.html" title="Estoque">
-                            <i class="fas fa-car"></i>
-                            Estoque
-                        </a>
-                    </li>
-                    <li>
-                        <a href="Contato.html" title="Contato">
-                             <i class="fas fa-envelope"></i>
-                             Contato
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-    </header>
+    <nav>
+      <ul>
+        <li>
+          <a target="blank" href="jogo/index.html" class="botao">Jogar agora</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-       <a href="jogo/index.html">Jogar agora</a>
-    </main>
+  <!-- Introdução -->
+  <main>
+    <p class="destaque">Prepare-se para a Caçada no Castelo!</p>
 
-    <footer>
-        <p>Todos os direitos reservados</p>
-        <p>
-            <a href="http://facebook.com" title="Facebook">
-                <i class="fab fa-facebook"></i>
-            </a>
-            <a href="https://instagram.com" title="Instagram">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://twitter.com" title="Twitter">
-                <i class="fab fa-twitter"></i>
-            </a>
-        </p>
-    </footer>
+    <p>Embarque em uma aventura épica com Gato Valente, o destemido felino que enfrenta perigos sombrios em um castelo cheio de mistérios e armadilhas traiçoeiras! 🐾💥</p>
 
-    <script>
-        function mostrarmenu(){
-            document.querySelector("header nav").classList.toggle("mostrar");
-        }
-    </script>
+    <p>Mas cuidado... os ratos espreitam nas sombras e uma bruxa malvada com poderes sinistros fará de tudo para impedi-lo de escapar. ⚔️🐀🧙‍♀️</p>
+
+    <p>Explore ambientes sombrios, desvie de armadilhas mortais e mostre que até um gato pode ser um verdadeiro herói! 🕸️🔥</p>
+
+    <p>⚔️ Ação, estratégia e desafios te esperam nesta jornada eletrizante!</p>
+
+    <p>🕹️ Você está pronto para encarar o Castelo das Sombras?</p>
+
+    <a target="blank" class="link-jogo" href="jogo/index.html">Vou encarar!</a>
+  </main>
+
+  <!-- Seção de Personagens -->
+  <section class="personagens">
+    <p class="destaque destaque-personagem">Personagens</p>
+      <div class="carrossel-container-buttons">
+        <button class="navegacao anterior" onclick="mover(-1)">&#10094;</button>
+        <button class="navegacao proximo" onclick="mover(1)">&#10095;</button>
+      </div>
+
+      <div class="carrossel" id="carrossel">
+        <!-- Personagem 1 -->
+        <div class="personagem">
+          <div class="personagem-conteudo">
+            <img src="gato.png" alt="Gato Valente" class="gato">
+            <div class="personagem-info">
+              <h2>Gato Valente</h2>
+              <p>Nosso herói felino ágil e corajoso. Ele explora o castelo em busca da liberdade, enfrentando armadilhas traiçoeiras e inimigos sombrios com inteligência e agilidade felina.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Personagem 2 -->
+        <div class="personagem">
+          <div class="personagem-conteudo">
+            <img src="rato.png" alt="Rato Sombrio" class="rato">
+            <div class="personagem-info">
+              <h2>Rato Sombrio</h2>
+              <p>Ratos traiçoeiros que se escondem nos cantos escuros do castelo. Ágeis e perigosos, tentam impedir o progresso do Gato a todo custo.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Personagem 3 -->
+        <div class="personagem">
+          <div class="personagem-conteudo">
+            <img src="bruxa.png" alt="Bruxa Malvada" class="bruxa">
+            <div class="personagem-info">
+              <h2>Bruxa Malvada</h2>
+              <p>Uma bruxa poderosa que controla as forças sombrias do castelo. Ela usa magia negra para criar armadilhas e monstros, tornando a jornada do Gato Valente ainda mais desafiadora.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>
+      <a target="blank" href="https://www.facebook.com/gabriel.fernando.75685" title="Facebook"><i class="fab fa-facebook"></i></a>
+      <a target="blank" href="https://www.instagram.com/gabrielfernando.rp/" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a target="blank" href="https://linkedin.com/in/gabriel-paim-" title="Linkedin"><i class="fab fa-linkedin"></i></a>
+    </p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    
+
+    let indice = 0;
+    const carrossel = document.getElementById('carrossel');
+    const total = carrossel.children.length;
+
+    function mover(direcao) {
+      indice += direcao;
+      if (indice < 0) indice = total - 1;
+      if (indice >= total) indice = 0;
+      carrossel.style.transform = `translateX(-${indice * 100}%)`;
+    }
+  </script>
 </body>
 </html>
